@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.scss">
+<link rel="stylesheet" href="style.css">
+    <title>cafe</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size:10px;
+    }
+
+    body {
+        background-image: url('image/bg.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-family: sans-serif;
+
+    }
+    main{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    .white_circle{
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+
+    }
+    .white_circle img{
+        width: 100%;
+        height: auto;
+    }
+    .menu_button{
+        background-color: #cc9933;
+    border: none;
+    padding: 1.4rem 4rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    }
+    .menu_button:hover{
+        background-color: #87641e;
+    }
+</style>
+</head>
+<body >
+    <main >
+        <section class="menu_modal_section">
+            <div id="modal-container">
+                <div class="modal-background">
+                  <div class="modal menu_modal">
+                    <ul>
+                        <li><a href="">Sheesha menu</a></li>
+                        <li> <a href="">Fodd menu</a></li>
+                        <li><a href="">Beverage menu</a></li>
+                        <li><a href="">Indoor games</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="white_circle">
+            <img src="image/logo.png" alt="logo">
+        </section>
+        <section class="buttons">
+            <button id="one" class="menu_button button">Menu</button>
+        </section>
+    </main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="main.js"></script>
+</html>
