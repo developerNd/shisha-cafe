@@ -1,5 +1,5 @@
 Let menuItemData = {
-          "Cat1":[
+          Cat1:[
           {id:"this is id",
           name: "product",
           desc: "this is description",
