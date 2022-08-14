@@ -1,4 +1,4 @@
-Let menuItemData = {
+Let menuItemsData = {
           Cat1:[
           {id:"this is id",
           name: "product",
