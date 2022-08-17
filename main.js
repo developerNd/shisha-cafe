@@ -13,7 +13,13 @@ $('#modal-container').click(function () {
 
 let shop = document.getElementById("menuItems");
 
-let basket = JSON.parse(localStorage.getItem("data")) || [];
+let basketData = localStorage.getItem("data");
+let basket;
+if (basketData != null){
+   basket = (basketData.split(","));
+}else{
+   basket = [];
+}
 
 function generateShop() {
   // Iterate through the object
@@ -61,34 +67,40 @@ function generateShop() {
   }
 }
 generateShop();
-
+// let itemsArr = [];
 function addToCart(id){
   let selectedItem = id;
-  let search = basket.find((x) => x.id === selectedItem);
+  // let search = basket.find((x) => x.id === selectedItem);
 
-  if (search === undefined) {
-    basket.push({
-      id: selectedItem,
-      item: 1,
-    });
-  } else {
-    search.item += 1;
-  }
-  console.log(basket);
+  // if (search === undefined) {
+  //   basket.push({
+  //     id: selectedItem,
+  //     item: 1,
+  //   });
+  // } else {
+  //   search.item += 1;
+  // }
+  // console.log(basket);
   update(selectedItem);
-  localStorage.setItem("data", JSON.stringify(basket));
+
+  let itemToAdd = basket.push(id);
+  localStorage.setItem("data", basket);
+  console.log(basket);
+  calculation();
 }
 
 
 let update = (id) => {
-  let search = basket.find((x) => x.id === id);
+  // let search = basket.find((x) => x.id === id);
   // document.getElementById(id).innerHTML = search.item;
   calculation();
 };
 
 let calculation = () => {
   let cartIcon = document.getElementById("cartAmount");
-  cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
+  cartIcon.innerHTML = basket.length;
 };
 
 calculation();
+let cartItems = localStorage.getItem("data");
+// console.log(cartItems.split(","));
