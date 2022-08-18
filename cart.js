@@ -112,4 +112,3 @@ let clearCart = () => {
     
     document.getElementById("cart_items").innerHTML = "<h2 style='color: #fff;text-align: center; margin: 1rem;'>Cart is empty</h2>";
 };
-location.reload();
