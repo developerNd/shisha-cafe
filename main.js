@@ -1,5 +1,3 @@
-
-
 let shop = document.getElementById("menuItems");
 
 let basketData = localStorage.getItem("data");
