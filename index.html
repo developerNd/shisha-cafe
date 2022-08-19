@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.scss">
-<link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.scss"> -->
+    <link rel="stylesheet" href="style.css">
     <title>cafe</title>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    html{
-        font-size:10px;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-        background-image: url('bg.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        font-family: sans-serif;
-        height:100vh;
+        html {
+            font-size: 10px;
+        }
 
-    }
-    main{
-        display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    }
-    .white_circle{
-        width: 270px;
-        height: 270px;
-        border-radius: 50%;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem;
+        body {
+            background-image: url('bg.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            font-family: sans-serif;
+            height: 100vh;
 
-    }
-    .white_circle img{
-        width: 100%;
-        height: auto;
-        padding-left: 1rem;
-    }
-    .menu_button{
-        background-color: #cc9933;
-    border: none;
-    padding: 1.4rem 4rem;
-    margin: 1rem 0;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
-    }
-    .menu_button:hover{
-        background-color: #87641e;
-    }
-</style>
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .white_circle {
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+
+        }
+
+        .white_circle img {
+            width: 100%;
+            height: auto;
+            padding-left: 1rem;
+        }
+
+        .menu_button {
+            background-color: #cc9933;
+            border: none;
+            padding: 1.4rem 4rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .menu_button:hover {
+            background-color: #87641e;
+        }
+    </style>
 </head>
-<body >
-    <main >
+
+<body>
+    <main>
         <section class="menu_modal_section">
             <div id="modal-container">
                 <div class="modal-background">
-                  <div class="modal menu_modal">
-                    <ul>
-                        <li><a href="sheesha.html">Sheesha menu</a></li>
-                        <li> <a href="food.html">Fodd menu</a></li>
-                        <li><a href="#">Beverage menu</a></li>
-                        <li><a href="#">Indoor games</a></li>
-                    </ul>
-                  </div>
+                    <div class="modal menu_modal">
+                        <ul>
+                            <li><a href="sheesha.html">Sheesha menu</a></li>
+                            <li> <a href="food.html">Food menu</a></li>
+                            <li><a href="beverageMenu.html">Beverage menu</a></li>
+                            <li><a href="indoorGames.html">Indoor games</a></li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
         <section class="white_circle">
             <img src="logo.png" alt="logo">
@@ -89,5 +97,20 @@
     </main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="main.js"></script>
+<!-- <script src="main.js"></script> -->
+<script>
+    $('.button').click(function () {
+  var buttonId = $(this).attr('id');
+  $('#modal-container').removeAttr('class').addClass(buttonId);
+  $('body').addClass('modal-active');
+  console.log("in");
+})
+
+$('#modal-container').click(function () {
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
+  console.log("out");
+});
+</script>
+
 </html>
