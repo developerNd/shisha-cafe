@@ -7,96 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>sheesha menu</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: sans-serif;
-            background-color: #efefef;
-        }
-
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.5rem;
-            padding: 1rem 0;
-            position: relative;
-        }
-
-        .main {
-            padding: 0 0.5rem;
-            position: relative;
-        }
-
-        .section_heading {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            /* color: #fff; */
-        }
-
-        .cards_div {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .card {
-            display: flex;
-            box-shadow: rgb(0 0 0 / 30%) 0px 2.5px 4px;
-            border-radius: 18px;
-            background-color: #fff;
-        }
-
-        .card_image {
-            width: 10rem;
-            background-color: #c8c8c8;
-            border-radius: 1rem 0rem 0rem 1rem;
-
-        }
-
-        .card_detail {
-            padding: 0.1rem 0.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .card_title {
-            font-size: 1.5rem;
-        }
-
-        .card_description {
-            font-size: .8rem;
-        }
-
-        .card_bottom {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .btn {
-            border: none;
-            background: none;
-            font-size: 1.5rem;
-            background-color: #e3e3e3;
-            display: flex;
-            margin:0 0.5rem;
-            /* justify-content: center; */
-            /* align-items: center; */
-            padding: 0.5rem;
-            border-radius: 50%;
-
-        }
-        .product_section{
-            margin-bottom: 1.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="pages.css">
 </head>
 
 <body>
@@ -104,240 +15,28 @@
         <nav>
             <button onclick="history.back()" class="back_button btn"><i class="ri-arrow-left-line"></i></button>
 
-            <div class="cart_button btn"><i class="ri-shopping-cart-line"></i></div>
+            <div class="cart_button btn">
+                <a href="cart.html">
+                    <i class="ri-shopping-cart-line"></i>
+                </a>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
         </nav>
     </header>
     <main class="main">
         <section class="main_section">
-            <div class="section_1 product_section">
-                <div class="section_heading">
-                    <span>basic(49)</span>
-                </div>
-                <div class="cards_div">
-                    <div class="card">
-                        <div class="card_image">
+            <div id="foodMenuItems" class="menuItems product_section">
 
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="section_1 product_section">
-                <div class="section_heading">
-                    <span>PAN BLENDS (59)</span>
-                </div>
-                <div class="cards_div">
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card_image">
-
-                        </div>
-                        <div class="card_detail">
-                            <div class="card_title">
-                                <span>duble apple</span>
-                            </div>
-                            <div class="card_description">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, unde.</span>
-                            </div>
-                            <div class="card_bottom">
-                                <div class="price">
-                                    <span>AED 120.00</span>
-                                </div>
-                                <div class="cart">
-                                    <span>Add to cart</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </section>
     </main>
 </body>
-
-</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script>
+// menuItemsData
+generateShop(menuItemsData,document.getElementById("foodMenuItems"));
+</script>
 
 </html>
