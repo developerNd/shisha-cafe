@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <nav>
-            <a onclick="history.back()" class="back_button btn"><i class="ri-arrow-left-line"></i></a>
+            <a onclick="document.referrer ? window.location = document.referrer : history.back()" class="back_button btn"><i class="ri-arrow-left-line"></i></a>
         </nav>
     </header>
     <main class="main">
