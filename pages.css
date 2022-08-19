@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /*             background-color: #efefef; */
+    background-color: #414141;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    position: relative;
+}
+.cart_button a{
+    display: flex;
+}
+
+.main {
+    padding: 0 0.5rem;
+    position: relative;
+}
+
+.section_heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+
+.section_sub_heading {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-top: 0.5rem;
+}
+
+.cards_div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card {
+    display: flex;
+    box-shadow: rgb(0 0 0 / 30%) 0px 2.5px 4px;
+    border-radius: 18px;
+    background-color: #fff;
+    margin: 1rem 0;
+    min-height: 7rem;
+
+}
+
+.card_image {
+    width: 30%;
+    background-color: #c8c8c8;
+    border-radius: 1rem 0rem 0rem 1rem;
+
+}
+
+.card_detail {
+    padding: 0.1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.card_title {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+
+}
+
+.card_description {
+    font-size: .8rem;
+}
+
+.card_bottom {
+    display: flex;
+    gap: 2rem;
+}
+
+.btn {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    background-color: #e3e3e3;
+    display: flex;
+    margin: 0 0.5rem;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+
+}
+
+.product_section {
+    margin-bottom: 1.5rem;
+}
+
+.cart_button {
+    position: relative;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    background: #fff;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+}
+
+.cartBtn {
+    padding: 0.5rem;
+    font-size: .6rem;
+    background-color: #cc9933;
+    border: none;
+    color: #fff;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+}
+.clearCart {
+    padding: 1rem;
+    background-color: #e53737;
+    border: none;
+    border-radius: 4px;
+    margin: 1rem 0;
+    color: #fff;
+
+}
