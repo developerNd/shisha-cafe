@@ -1,12 +1,5 @@
 let ShoppingCart = document.getElementById("cart_items");
 let label = document.getElementById("label");
-
-/**
- * ! Basket to hold all the selected items
- * ? the getItem part is retrieving data from the local storage
- * ? if local storage is blank, basket becomes an empty array
- */
-
 let basketData = localStorage.getItem("data");
 let basket;
 if (basketData != null) {
@@ -15,21 +8,21 @@ if (basketData != null) {
     basket = [];
 }
 
-
-
-let generateCartItems = () => {
+let generateCartItems = (data) => {
+         let itemData = data;
     if (basket.length !== 0) {
+        // console.log(menuItemsData);
         return (basket
             .forEach(x => {
-                //    console.log(x); 
-                for (const key in menuItemsData) {
-                    if (menuItemsData.hasOwnProperty(key)) {
-                        //   console.log(menuItemsData[key]);
-                        for (let i = 0; i < menuItemsData[key].length; i++) {
-                            let itemObj = menuItemsData[key][i];
-                            // let search = itemObj.find((x) => x.id === id) || [];
-                            // console.log(typeof(itemObj));
+                for (const key in itemData ) {
+                    if (itemData.hasOwnProperty(key)) {
+                        // console.log(key);
+                        for (let i = 0; i < itemData[key].length; i++) {
+                            let itemObj = itemData[key][i];
+                            console.log(itemObj.id);
+                            // console.log(x);
                             if (x == itemObj.id) {
+                                console.log("dikesh");
                                 console.log(itemObj.id);
                                 return (ShoppingCart.innerHTML += `
                                 <div class="card" id="product-id-${itemObj.id}">
@@ -48,14 +41,13 @@ let generateCartItems = () => {
                                                         <span>AED ${itemObj.price}</span>
                                                     </div>
                                                     <div class="cart" >
-                                                        <button id="${itemObj.id}" onclick="removeItem('${itemObj.id}');" >Remove</span>
+                                                        <button id="${itemObj.id}" class="cartBtn" onclick="removeItem('${itemObj.id}');" >Remove</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                   `);
                             }
-                            // console.log(x.id);
                         }
                     }
                 }
@@ -64,7 +56,7 @@ let generateCartItems = () => {
         ShoppingCart.innerHTML = "";
         label.innerHTML = `
             <h2>Cart is Empty</h2>
-            <a href="sheesha.html">
+            <a onclick="history.back()">
             <button class="HomeBtn">Back to Home</button>
             </a>
             `;
@@ -80,16 +72,6 @@ let update = (id) => {
     TotalAmount();
 };
 
-
-// let removeItem = (id) => {
-//     let selectedItem = id;
-//     basket = basket.filter((x) => x.id !== selectedItem);
-//     // calculation();
-//     generateCartItems();
-//     // TotalAmount();
-//     localStorage.removeItem("data", JSON.stringify(basket));
-// };
-
 function removeItem(item) {
     console.log(item);
     var myIndex = basket.indexOf(item);
@@ -104,11 +86,9 @@ function removeItem(item) {
     }
     console.log(basket);
     document.getElementById("product-id-"+item).style.display="none";
-
 }
 
 let clearCart = () => {
     localStorage.clear();
-    
     document.getElementById("cart_items").innerHTML = "<h2 style='color: #fff;text-align: center; margin: 1rem;'>Cart is empty</h2>";
 };
