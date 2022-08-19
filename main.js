@@ -1,43 +1,42 @@
-$('.button').click(function () {
-  var buttonId = $(this).attr('id');
-  $('#modal-container').removeAttr('class').addClass(buttonId);
-  $('body').addClass('modal-active');
-  console.log("in");
-})
 
-$('#modal-container').click(function () {
-  $(this).addClass('out');
-  $('body').removeClass('modal-active');
-  console.log("out");
-});
 
 let shop = document.getElementById("menuItems");
 
 let basketData = localStorage.getItem("data");
 let basket;
-if (basketData != null){
-   basket = (basketData.split(","));
-}else{
-   basket = [];
+if (basketData != null) {
+  basket = (basketData.split(","));
+} else {
+  basket = [];
 }
 
-function generateShop() {
+function generateShop(data, containerId) {
   // Iterate through the object
-  for (const key in menuItemsData) {
-    if (menuItemsData.hasOwnProperty(key)) {
-      // console.log(`${key}: ${a[key]}`);
+  for (const key in data) {
+    if (data.hasOwnProperty(key)) {
 
-      shop.innerHTML += `<div class="section_heading">
+      containerId.innerHTML += `<div class="section_heading">
       <span>${key}</span>
-  </div>`;
+  </div>
+  <hr class="hr" style="
+    height: mar;
+    margin: .4rem 0 1rem 0;
+">`;
       // Iterate through the array inside the object
-      for (let i = 0; i < menuItemsData[key].length; i++) {
-        let itemObj = menuItemsData[key][i];
-         
-        // .map((x) => {
-        //   // let { id, name, desc, img, price } = x;
-        //   // let search = basket.find((y) => y.id === id) || [];
-          shop.innerHTML += `
+      for (let i = 0; i < data[key].length; i++) {
+        let itemObj = data[key][i];
+        let cartBtn;
+        let display;
+        if( (basket.find(element => element == itemObj.id)) == undefined){
+          cartBtn = `<button id="${itemObj.id}" onclick="addToCart('${itemObj.id}');" class="cartBtn" >Add to cart</button>`;
+      }else{
+        cartBtn = `<button class="cartBtn" >Added</span>`;
+      }
+      if((itemObj.desc || itemObj.price) == undefined){
+        display = "style='display:none'";
+      }
+
+        containerId.innerHTML += `
             <div class="card" id="product-id-${itemObj.id}">
                         <div class="card_image">
 
@@ -46,53 +45,40 @@ function generateShop() {
                             <div class="card_title">
                                 <span>${itemObj.name}</span>
                             </div>
-                            <div class="card_description">
+                            <div class="card_description" ${display}>
                                 <span>${itemObj.desc}.</span>
                             </div>
                             <div class="card_bottom">
-                                <div class="price">
+                                <div class="price" ${display}>
                                     <span>AED ${itemObj.price}</span>
                                 </div>
                                 <div class="cart" >
-                                    <button id="${itemObj.id}" onclick="addToCart('${itemObj.id}');" >Add to cart</span>
+                                 ${cartBtn}
                                 </div>
                             </div>
                         </div>
-                    </div>
-              `;
-        // })
-        // appendChild
+                    </div>`;
       }
     }
   }
 }
-generateShop();
-// let itemsArr = [];
-function addToCart(id){
-  let selectedItem = id;
-  // let search = basket.find((x) => x.id === selectedItem);
+// generateShop(menuItemsData,shop);
 
-  // if (search === undefined) {
-  //   basket.push({
-  //     id: selectedItem,
-  //     item: 1,
-  //   });
-  // } else {
-  //   search.item += 1;
-  // }
-  // console.log(basket);
-  update(selectedItem);
-
-  let itemToAdd = basket.push(id);
-  localStorage.setItem("data", basket);
-  console.log(basket);
-  calculation();
+function addToCart(id) {
+  
+    let selectedItem = id;
+    update(selectedItem);
+  
+    let itemToAdd = basket.push(id);
+    localStorage.setItem("data", basket);
+    document.getElementById(id).innerHTML = "Added";
+    // console.log(basket);
+    calculation();
+ 
 }
 
-
 let update = (id) => {
-  // let search = basket.find((x) => x.id === id);
-  // document.getElementById(id).innerHTML = search.item;
+
   calculation();
 };
 
@@ -103,4 +89,4 @@ let calculation = () => {
 
 calculation();
 let cartItems = localStorage.getItem("data");
-// console.log(cartItems.split(","));
+
