@@ -69,6 +69,20 @@
         .menu_button:hover {
             background-color: #87641e;
         }
+
+        .menuList {
+            position: relative;
+        }
+
+        .menuList:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: black;
+            top: 100%;
+            left: 0;
+        }
     </style>
 </head>
 
@@ -79,10 +93,10 @@
                 <div class="modal-background">
                     <div class="modal menu_modal">
                         <ul>
-                            <li><a href="sheesha.html">Sheesha menu</a></li>
-                            <li> <a href="food.html">Food menu</a></li>
-                            <li><a href="beverageMenu.html">Beverage menu</a></li>
-                            <li><a href="indoorGames.html">Indoor games</a></li>
+                            <li><a href="sheesha.html" class="menuList">Sheesha menu</a></li>
+                            <li> <a href="food.html" class="menuList">Food menu</a></li>
+                            <li><a href="beverageMenu.html" class="menuList">Beverage menu</a></li>
+                            <li><a href="indoorGames.html" class="menuList">Indoor games</a></li>
                         </ul>
                     </div>
                 </div>
@@ -100,17 +114,17 @@
 <!-- <script src="main.js"></script> -->
 <script>
     $('.button').click(function () {
-  var buttonId = $(this).attr('id');
-  $('#modal-container').removeAttr('class').addClass(buttonId);
-  $('body').addClass('modal-active');
-  console.log("in");
-})
+        var buttonId = $(this).attr('id');
+        $('#modal-container').removeAttr('class').addClass(buttonId);
+        $('body').addClass('modal-active');
+        console.log("in");
+    })
 
-$('#modal-container').click(function () {
-  $(this).addClass('out');
-  $('body').removeClass('modal-active');
-  console.log("out");
-});
+    $('#modal-container').click(function () {
+        $(this).addClass('out');
+        $('body').removeClass('modal-active');
+        console.log("out");
+    });
 </script>
 
 </html>
