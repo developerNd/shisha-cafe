@@ -25,8 +25,12 @@
     </header>
     <main class="main">
         <section class="main_section">
-            <div id="foodMenuItems" class="menuItems product_section">
+            <div id="appetizers" class="menuItems product_section">
+                <div class="section_heading"><span>APPETIZER</span></div>
 
+            </div>
+            <div id="mainCourse" class="menuItems product_section">
+                <div class="section_heading"><span>MAIN COURSE</span></div>
             </div>
         </section>
     </main>
@@ -36,7 +40,8 @@
 <script src="main.js"></script>
 <script>
 // menuItemsData
-generateShop(menuItemsData,document.getElementById("foodMenuItems"));
+generateShop(appetizers,document.getElementById("appetizers"));
+generateShop(mainCourse,document.getElementById("mainCourse"));
 </script>
 
 </html>
