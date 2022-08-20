@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,8 @@ body {
     font-family: 'Baloo Bhaijaan 2', cursive;
     /*             background-color: #efefef; */
     background-color: #414141;
+    max-width: 50rem;
+    margin: auto;
 }
 a{
     text-decoration: none;
@@ -69,11 +72,14 @@ nav {
 }
 
 .card_detail {
-    padding: 0.1rem 0.5rem;
+    padding: 0.4rem 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     justify-content: center;
+    width: 70%;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .card_title {
@@ -84,11 +90,13 @@ nav {
 
 .card_description {
     font-size: .8rem;
+    line-height: 1.2rem;
 }
 
 .card_bottom {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .btn {
