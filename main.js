@@ -1,3 +1,5 @@
+
+
 let shop = document.getElementById("menuItems");
 
 let basketData = localStorage.getItem("data");
@@ -15,24 +17,32 @@ function generateShop(data, containerId) {
 
       containerId.innerHTML += `<div class="section_heading">
       <span>${key}</span>
-  </div>
-  <hr class="hr" style="
-    height: mar;
-    margin: .4rem 0 1rem 0;
-">`;
+      </div>
+      <hr class="hr" style="
+      height: mar;
+      margin: .4rem 0 1rem 0;
+      ">`;
       // Iterate through the array inside the object
       for (let i = 0; i < data[key].length; i++) {
         let itemObj = data[key][i];
         let cartBtn;
-        let display;
-        if( (basket.find(element => element == itemObj.id)) == undefined){
+        if ((basket.find(element => element == itemObj.id)) == undefined) {
           cartBtn = `<button id="${itemObj.id}" onclick="addToCart('${itemObj.id}');" class="cartBtn" >Add to cart</button>`;
-      }else{
-        cartBtn = `<button class="cartBtn" >Added</span>`;
-      }
-      if((itemObj.desc || itemObj.price) == undefined){
-        display = "style='display:none'";
-      }
+        } else {
+          cartBtn = `<button class="cartBtn" >Added</span>`;
+        }
+        let hideDesc;
+        let hidePirce;
+        let hideCart;
+        if (itemObj.desc == undefined) {
+          hideDesc = "style='display:none'";
+        } else if (itemObj.price == undefined) {
+          hidePirce = "style='display:none'";
+        }
+        if (data == indoorGamesItems) {
+          hideCart = "style='display:none'"
+          hidePirce = "style='display:none'";
+        }
 
         containerId.innerHTML += `
             <div class="card" id="product-id-${itemObj.id}">
@@ -43,14 +53,14 @@ function generateShop(data, containerId) {
                             <div class="card_title">
                                 <span>${itemObj.name}</span>
                             </div>
-                            <div class="card_description" ${display}>
+                            <div class="card_description" ${hideDesc}>
                                 <span>${itemObj.desc}.</span>
                             </div>
                             <div class="card_bottom">
-                                <div class="price" ${display}>
+                                <div class="price" ${hidePirce}>
                                     <span>AED ${itemObj.price}</span>
                                 </div>
-                                <div class="cart" >
+                                <div class="cart" ${hideCart}>
                                  ${cartBtn}
                                 </div>
                             </div>
@@ -63,16 +73,16 @@ function generateShop(data, containerId) {
 // generateShop(menuItemsData,shop);
 
 function addToCart(id) {
-  
-    let selectedItem = id;
-    update(selectedItem);
-  
-    let itemToAdd = basket.push(id);
-    localStorage.setItem("data", basket);
-    document.getElementById(id).innerHTML = "Added";
-    // console.log(basket);
-    calculation();
- 
+
+  let selectedItem = id;
+  update(selectedItem);
+
+  let itemToAdd = basket.push(id);
+  localStorage.setItem("data", basket);
+  document.getElementById(id).innerHTML = "Added";
+  // console.log(basket);
+  calculation();
+
 }
 
 let update = (id) => {
