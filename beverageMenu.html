@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Beverage menu</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html" class="back_button btn"><i class="ri-arrow-left-line"></i></a>
+
+            <div class="cart_button btn">
+                <a href="cart.html">
+                    <i class="ri-shopping-cart-line"></i>
+                </a>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main_section">
+            <div id="beverageMenuItems" class="menuItems product_section">
+
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script>
+generateShop(beverageMenuItems,document.getElementById("beverageMenuItems"));
+    
+</script>
+
+</html>
