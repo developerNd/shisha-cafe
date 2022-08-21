@@ -38,383 +38,475 @@ let sheeshaMenuItems = {
   "Basic(49)": [
     {
       id: "doubleApple",
-      name: "Double Apple"
+      name: "Double Apple",
+      price: 49
     },
     {
       id: "grapeMint",
-      name: "Grape Mint"
+      name: "Grape Mint",
+      price: 49
     },
     {
       id: "grape",
-      name: "GRape"
+      name: "GRape",
+      price: 49
     },
     {
       id: "blueberry",
-      name: "Blueberry"
+      name: "Blueberry",
+      price: 49
     },
     {
       id: "blueberryMint",
-      name: "Blueberry Mint"
+      name: "Blueberry Mint",
+      price: 49
     },
     {
       id: "peach",
-      name: "Peach"
+      name: "Peach",
+      price: 49
     },
     {
       id: "orange",
-      name: "Orange"
+      name: "Orange",
+      price: 49
     },
     {
       id: "lychee",
-      name: "Lychee"
+      name: "Lychee",
+      price: 49
     },
     {
       id: "lycheeMint",
-      name: "Lychee Mint"
+      name: "Lychee Mint",
+      price: 49
     },
     {
       id: "cherry",
-      name: "Cherry"
+      name: "Cherry",
+      price: 49
     },
     {
       id: "rose",
-      name: "Rose"
+      name: "Rose",
+      price: 49
     },
     {
       id: "gumMint",
-      name: "Gum Mint"
+      name: "Gum Mint",
+      price: 49
     },
     {
       id: "guava",
-      name: "Guava"
+      name: "Guava",
+      price: 49
     },
     {
       id: "pineapple",
-      name: "Pineapple"
+      name: "Pineapple",
+      price: 49
     },
     {
       id: "lemonMint",
-      name: "Lemon Mint"
+      name: "Lemon Mint",
+      price: 49
     },
     {
       id: "kiwi",
-      name: "Kiwi"
+      name: "Kiwi",
+      price: 49
     },
     {
       id: "kiwiMint",
-      name: "Kiwi Mint"
+      name: "Kiwi Mint",
+      price: 49
     },
     {
-      id: "mango",
-      name: "Mango"
+      id: "mangosdf",
+      name: "Mango",
+      price: 49
     },
     {
       id: "straberry",
-      name: "Straberry"
+      name: "Straberry",
+      price: 49
     },
     {
       id: "vanillaMint",
-      name: "Vanilla Mint"
+      name: "Vanilla Mint",
+      price: 49
     },
     {
       id: "sweetMelon",
-      name: "Sweet Melon"
+      name: "Sweet Melon",
+      price: 49
     },
     {
       id: "appleNakhla",
-      name: "Apple Nkhla"
+      name: "Apple Nkhla",
+      price: 49
     }
   ],
-  "Basic(49)": [
+  "PAN BLENDS (59)": [
     {
       id: "blueberryPan",
-      name: "Blueberry Pan"
+      name: "Blueberry Pan",
+      price: 59
     },
     {
       id: "bguavaPan",
-      name: "Guava Pan"
+      name: "Guava Pan",
+      price: 59
     },
     {
       id: "bgrapePan",
-      name: "Grape Pan"
+      name: "Grape Pan",
+      price: 59
     },
     {
       id: "lycheePan",
-      name: "Lychee Pan"
+      name: "Lychee Pan",
+      price: 59
     },
     {
       id: "orangePan",
-      name: "Orange Pan"
+      name: "Orange Pan",
+      price: 59
     },
     {
       id: "mangoPan",
-      name: "Mango Pan"
+      name: "Mango Pan",
+      price: 59
     },
     {
       id: "zafranPan",
-      name: "Zafran Pan"
+      name: "Zafran Pan",
+      price: 59
     },
     {
       id: "springWaterPan",
-      name: "Spring-Water Pan"
+      name: "Spring-Water Pan",
+      price: 59
     },
     {
       id: "kacchiKeyriPan",
-      name: "Kacchi Keyri Pan"
+      name: "Kacchi Keyri Pan",
+      price: 59
     },
     {
       id: "vanillaPan",
-      name: "Vanilla Pan"
+      name: "Vanilla Pan",
+      price: 59
     },
     {
       id: "kiwiPan",
-      name: "Kiwi Pan"
+      name: "Kiwi Pan",
+      price: 59
     },
     {
       id: "cherryPan",
-      name: "Cherry Pan"
+      name: "Cherry Pan",
+      price: 59
     },
     {
       id: "strawberryPan",
-      name: "Strawberry Pan"
+      name: "Strawberry Pan",
+      price: 59
     },
     {
       id: "passionPan",
-      name: "Passion Pan"
+      name: "Passion Pan",
+      price: 59
     },
     {
       id: "commissionerPan",
-      name: "Commissioner Pan"
+      name: "Commissioner Pan",
+      price: 59
     }
   ],
   "Mixed Blengs </br><p class='section_sub_heading'> Served With ICE-Cube(69)</p>": [
     {
       id: "appleGumMint",
-      name: "Apple Gum Mint"
+      name: "Apple Gum Mint",
+      price: 69
     },
     {
       id: "appleMintZafran",
-      name: "Apple Mint Zafran"
+      name: "Apple Mint Zafran",
+      price: 69
     },
     {
       id: "springwaterPanZafran",
-      name: "Springwater Pan Zafran"
+      name: "Springwater Pan Zafran",
+      price: 69
     },
     {
       id: "orangeMangoPan",
-      name: "Orange Mango Pan"
+      name: "Orange Mango Pan",
+      price: 69
     },
     {
       id: "orangevanillaPan",
-      name: "Orange Vanilla Pan"
+      name: "Orange Vanilla Pan",
+      price: 69
     },
     {
       id: "commissionerMango",
-      name: "Commissioner Mango"
+      name: "Commissioner Mango",
+      price: 69
     },
     {
       id: "orangeMintZafran",
-      name: "Orange Mint ZAfran"
+      name: "Orange Mint ZAfran",
+      price: 69
     },
     {
       id: "orangeGumSpringwater",
-      name: "Orange Gum Springwater"
+      name: "Orange Gum Springwater",
+      price: 69
     },
     {
       id: "blueberryZafran",
-      name: "Blueberry Zafran"
+      name: "Blueberry Zafran",
+      price: 69
     },
     {
       id: "mangospringwaterMint",
-      name: "Mango Springwater Mint"
+      name: "Mango Springwater Mint",
+      price: 69
     },
     {
       id: "guvaCommissionerPan",
-      name: "Guva Commissioner Pan"
+      name: "Guva Commissioner Pan",
+      price: 69
     },
     {
       id: "sweetmelonGrapePan",
-      name: "Sweet Melon GRape Pan"
+      name: "Sweet Melon GRape Pan",
+      price: 69
     },
     {
       id: "passionGuavaPan",
-      name: "Passion Guava Pan"
+      name: "Passion Guava Pan",
+      price: 69
     },
     {
       id: "sweetmelonwatermelonkiwi",
-      name: "SweetMelon Watermelon Kiwi"
+      name: "SweetMelon Watermelon Kiwi",
+      price: 69
     },
     {
       id: "orangeLemonMint",
-      name: "Orange Lemon Mint"
+      name: "Orange Lemon Mint",
+      price: 69
     },
     {
       id: "grapePineapplePan",
-      name: "Grape Pineapple Pan"
+      name: "Grape Pineapple Pan",
+      price: 69
     },
     {
       id: "mangopeachPan",
-      name: "Mango Peach Pan"
+      name: "Mango Peach Pan",
+      price: 69
     }
   ],
   "PREMIUM </br><p class='section_sub_heading'> Ice-Cube + Your Choice Of Fresh Juice(79)</p>": [
     {
       id: "panRoseMangoKiwi",
-      name: "Pan Rose Mango Kiwi"
+      name: "Pan Rose Mango Kiwi",
+      price: 79
     },
     {
       id: "appleCherryVanilla",
-      name: "Apple Cherry Vanilla"
+      name: "Apple Cherry Vanilla",
+      price: 79
     },
     {
       id: "panKachhiKeyriMint",
-      name: "Pan Kacchi Keyri Mint"
+      name: "Pan Kacchi Keyri Mint",
+      price: 79
     },
     {
       id: "watermelonSweetMelonMint",
-      name: "Watermelon SweetMelon Mint"
+      name: "Watermelon SweetMelon Mint",
+      price: 79
     },
     {
       id: "zafranPanSpringwater",
-      name: "Zafran Pan Springwater"
+      name: "Zafran Pan Springwater",
+      price: 79
     },
     {
       id: "panAppleCherry",
-      name: "Pan Apple Cherry"
+      name: "Pan Apple Cherry",
+      price: 79
     },
     {
       id: "kiwiBlueberryStrawberry",
-      name: "Kiwi BlueBerry Strawaberry"
+      name: "Kiwi BlueBerry Strawaberry",
+      price: 79
     },
     {
       id: "sweetmelonPanGrape",
-      name: "Sweetmelon Pan Grape"
+      name: "Sweetmelon Pan Grape",
+      price: 79
     },
     {
       id: "appleCherryMint",
-      name: "PanPassionVanilla"
+      name: "PanPassionVanilla",
+      price: 79
     }
   ],
   "RUSSIAN TWIST </br><p class='section_sub_heading'> Sheeha With LED Laser(99)</p>": [
     {
       id: "panorangepeachandgum",
-      name: "Pan, Orange, Peach And Gum"
+      name: "Pan, Orange, Peach And Gum",
+      price: 99
     },
     {
       id: "blueberrylemonrosepan",
-      name: "Blueberry, Lemon, Rose, Pan"
+      name: "Blueberry, Lemon, Rose, Pan",
+      price: 99
     },
     {
       id: "applenightqueen",
-      name: "Apple, Night-Queen"
+      name: "Apple, Night-Queen",
+      price: 99
     },
     {
       id: "magaipanzafran",
-      name: "Mangai pan Zafran"
+      name: "Mangai pan Zafran",
+      price: 99
     },
     {
       id: "rtapplecherrymint",
-      name: "Apple Cherry Mint"
+      name: "Apple Cherry Mint",
+      price: 99
     },
     {
       id: "pancardamommint",
-      name: "Pan Cardamom Mint"
+      name: "Pan Cardamom Mint",
+      price: 99
     },
     {
       id: "panclovecommissioner",
-      name: "Pan Clove Commissioner"
+      name: "Pan Clove Commissioner",
+      price: 99
     },
     {
       id: "applegrapeblueberry",
-      name: "Apple Grape Blueberry"
+      name: "Apple Grape Blueberry",
+      price: 99
     },
     {
       id: "berrygummint",
-      name: "Berry Gum Mint"
+      name: "Berry Gum Mint",
+      price: 99
     },
     {
       id: "Blueberrypanrose",
-      name: "Blueberry Pan Rose"
+      name: "Blueberry Pan Rose",
+      price: 99
     }
   ],
   "FLY SERIES</br><p class='section_sub_heading'>Sheesha Served With LED Laser AND Your Choice Of fresh juice(121)</p>": [
     {
       id: "mixofblueberries",
-      name: "Mix Of Bluerries"
+      name: "Mix Of Bluerries",
+      price: 121
     },
     {
       id: "blackberryPanGrape",
-      name: "Blackberry, Pan, Grape"
+      name: "Blackberry, Pan, Grape",
+      price: 121
     },
     {
       id: "pangrapegum",
-      name: "Pan,Grape,Gum"
+      name: "Pan,Grape,Gum",
+      price: 121
     },
     {
       id: "panmagaizafran",
-      name: "Pan,Magai,Zafran"
+      name: "Pan,Magai,Zafran",
+      price: 121
     },
     {
       id: "pineappleorangemint",
-      name: "Pineapple, Orange,Mint"
+      name: "Pineapple, Orange,Mint",
+      price: 121
     },
     {
       id: "pancappuccinovanilla",
-      name: "Pan,Cappuccino,Vanilla"
+      name: "Pan,Cappuccino,Vanilla",
+      price: 121
     },
     {
       id: "coconutvanillapan",
-      name: "Coconut,Vanilla,Pan"
+      name: "Coconut,Vanilla,Pan",
+      price: 121
     },
     {
       id: "passionmangopan",
-      name: "Passion,Mango,Pan"
+      name: "Passion,Mango,Pan",
+      price: 121
     },
     {
       id: "fsPankiwimint",
-      name: "Pan,Kiwi,Mint"
+      name: "Pan,Kiwi,Mint",
+      price: 121
     },
     {
       id: "pankiwicigar",
-      name: "Pan,Kiwi,Cigar"
+      name: "Pan,Kiwi,Cigar",
+      price: 121
     }
   ],
   "BOOM EXOTIC </br> <p class='section_sub_heading'>Sheesha Served With Your Choice Of Appetizer + Fresh Juice + LED Laser(151)</p>": [
     {
       id: "bepanpassionvanilla",
-      name: "Pan,Passion,Vanilla"
+      name: "Pan,Passion,Vanilla",
+      price: 151
     },
     {
       id: "berrybummint",
-      name: "Berry,Gum,Mint"
+      name: "Berry,Gum,Mint",
+      price: 151
     },
     {
       id: "beorangevanillapan",
-      name: "Orange,vanilla,Pan"
+      name: "Orange,vanilla,Pan",
+      price: 151
     },
     {
       id: "bepankiwimint",
-      name: "Pan,Kiwi,Mint"
+      name: "Pan,Kiwi,Mint",
+      price: 151
     },
     {
       id: "beGrapepineapplepan",
-      name: "Grape,Pineapple,Pan"
+      name: "Grape,Pineapple,Pan",
+      price: 151
     },
     {
       id: "bemangopeachpan",
-      name: "Mango,Peach,Pan"
+      name: "Mango,Peach,Pan",
+      price: 151
     },
     {
       id: "beapplecherryvanilla",
-      name: "Apple,Cherry,Vanilla"
+      name: "Apple,Cherry,Vanilla",
+      price: 151
     },
     {
       id: "guavapanzafran",
-      name: "Guava,Pan,Zafran"
+      name: "Guava,Pan,Zafran",
+      price: 151
     },
     {
       id: "springwaterpanzafran",
-      name: "Spring Water,Pan,Zafran"
+      name: "Spring Water,Pan,Zafran",
+      price: 151
     }
   ],
   "ALLA BOOM SPECIAL </br><p class='section_sub_heading'> Live Sheesha Making + LED Laser & Pipe + Fruit Platter + 1 One Head Change(199)</p>": [
@@ -896,8 +988,12 @@ let mainCourse = {
       name: "CHICKEN MOMO FRIED",
       price: 22
     }
-  ],
+  ]
   
+
+};
+
+let beverageMenuItems = {
   "FRESH JUICE":[
     {
       id: "ORANGE",
@@ -910,7 +1006,7 @@ let mainCourse = {
       price: 22
     },
     {
-      id: "PINEAPPLE",
+      id: "PINEAPPLEsdfs",
       name: "PINEAPPLE",
       price: 22
     },
@@ -996,7 +1092,7 @@ let mainCourse = {
       price: 22
     },
     {
-      id: "PINEAPPLE",
+      id: "PINEAPPLEdsfsdf",
       name: "PINEAPPLE",
       price: 22
     },
@@ -1029,7 +1125,7 @@ let mainCourse = {
       price: 25
     },
     {
-      id: "AVOCADO",
+      id: "AVOCADOsd",
       name: "AVOCADO",
       price: 25
     },
@@ -1203,3 +1299,39 @@ let mainCourse = {
     },
   ]
 };
+
+let indoorGamesItems = {
+  "FREE GAMES":[
+    {
+      id: "playingCards",
+      name: "PLAYING CARDS",
+      price: "FREE"
+    },
+    {
+      id: "uno",
+      name: "UNO",
+      price: "FREE"
+    },
+    {
+      id: "caromboard",
+      name: "CAROM BOARD",
+      price: "FREE"
+    },
+    {
+      id: "chess",
+      name: "CHESS",
+      price: "FREE"
+    },
+    {
+      id: "ludo",
+      name: "LUDO",
+      price: "FREE"
+    }
+  ],
+  "PAID GAMES:</br> AED 20/hr":[
+    {
+      id: "ps5",
+      name: "Ps5",
+    }
+  ]
+}
