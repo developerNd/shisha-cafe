@@ -1314,7 +1314,7 @@ let indoorGamesItems = {
     {
       id: "playingCards",
       name: "PLAYING CARDS",
-      image: "playcards.jpg"
+      image: "cards.webp"
     },
     {
       id: "uno",
