@@ -998,46 +998,55 @@ let beverageMenuItems = {
     {
       id: "ORANGE",
       name: "ORANGE",
+      image: "freshjuice.webp",
       price: 22
     },
     {
       id: "MANGO",
       name: "MANGO",
+      image: "freshjuice.webp",
       price: 22
     },
     {
       id: "PINEAPPLEsdfs",
       name: "PINEAPPLE",
+      image: "freshjuice.webp",
       price: 22
     },
     {
       id: "GREENAPPLE",
       name: "GREEN APPLE",
+      image: "freshjuice.webp",
       price: 22
     },
     {
       id: "WATERMELON",
       name: "WATERMELON",
+      image: "freshjuice.webp",
       price: 22
     },
     {
       id: "AVOCADO",
       name: "ORANGE",
+      image: "freshjuice.webp",
       price: 22
     },
     {
       id: "CARROT",
       name: "CARROT",
+      image: "freshjuice.webp",
       price: 22
     },
     {
       id: "POMEGRANATE",
       name: "POMEGRANATE",
+      image: "freshjuice.webp",
       price: 22
     },
     {
       id: "AALABOOMSSPECIAL",
       name: "AALA BOOM'S SPECIAL",
+      image: "freshjuice.webp",
       price: 25
     },
   ],
@@ -1305,33 +1314,34 @@ let indoorGamesItems = {
     {
       id: "playingCards",
       name: "PLAYING CARDS",
-      price: "FREE"
+      image: "playcards.jpg"
     },
     {
       id: "uno",
       name: "UNO",
-      price: "FREE"
+      image: "uno.webp"
     },
     {
       id: "caromboard",
       name: "CAROM BOARD",
-      price: "FREE"
+      image: "carom.webp"
     },
     {
       id: "chess",
       name: "CHESS",
-      price: "FREE"
+      image: "chess.webp"
     },
     {
       id: "ludo",
       name: "LUDO",
-      price: "FREE"
+      image: "ludo.webp"
     }
   ],
   "PAID GAMES:</br> AED 20/hr":[
     {
       id: "ps5",
       name: "Ps5",
+      image: "ps5.webp"
     }
   ]
 }
