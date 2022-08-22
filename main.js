@@ -34,6 +34,7 @@ function generateShop(data, containerId) {
         let hideDesc;
         let hidePirce;
         let hideCart;
+        let hideImage;
         if (itemObj.desc == undefined) {
           hideDesc = "style='display:none'";
         } else if (itemObj.price == undefined) {
@@ -43,11 +44,14 @@ function generateShop(data, containerId) {
           hideCart = "style='display:none'"
           hidePirce = "style='display:none'";
         }
+        if(itemObj.image == undefined){
+          hideImage = " display:none";
+        }
 
         containerId.innerHTML += `
             <div class="card" id="product-id-${itemObj.id}">
                         <div class="card_image">
-
+                           <img src="${itemObj.image}" style="width:100%;object-fit:cover;">
                         </div>
                         <div class="card_detail" id="">
                             <div class="card_title">
