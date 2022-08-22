@@ -68,7 +68,11 @@ nav {
     width: 30%;
     background-color: #c8c8c8;
     border-radius: 1rem 0rem 0rem 1rem;
-
+    display: flex;
+}
+.card_image img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .card_detail {
@@ -133,7 +137,7 @@ nav {
 
 .cartBtn {
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: .6rem;
     background-color: #cc9933;
     border: none;
     color: #fff;
