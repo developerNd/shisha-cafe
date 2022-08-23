@@ -24,16 +24,26 @@ let generateCartItems = (data) => {
                             if (x == itemObj.id) {
                                 console.log("dikesh");
                                 console.log(itemObj.id);
+                                let hideImage;
+                                let hideDesc;
+                                 if(itemObj.image == undefined){
+                                      hideImage = " display:none";
+                                    }
+                                if(itemObj.desc  == undefined){
+                                    hideDesc = "style='display:none'";
+                                }
+                                
+
                                 return (ShoppingCart.innerHTML += `
                                 <div class="card" id="product-id-${itemObj.id}">
                                             <div class="card_image">
-                    
+                                                <img src="${itemObj.image}" style="width:100%;object-fit:cover;${hideImage}">
                                             </div>
                                             <div class="card_detail" id="">
                                                 <div class="card_title">
                                                     <span>${itemObj.name}</span>
                                                 </div>
-                                                <div class="card_description">
+                                                <div class="card_description" ${hideDesc}>
                                                     <span>${itemObj.desc}.</span>
                                                 </div>
                                                 <div class="card_bottom">
