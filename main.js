@@ -51,7 +51,7 @@ function generateShop(data, containerId) {
         containerId.innerHTML += `
             <div class="card" id="product-id-${itemObj.id}">
                         <div class="card_image">
-                           <img src="${itemObj.image}" style="width:100%;object-fit:cover;">
+                           <img src="${itemObj.image}" style="width:100%;object-fit:cover;${hideImage}">
                         </div>
                         <div class="card_detail" id="">
                             <div class="card_title">
