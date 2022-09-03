@@ -1339,7 +1339,7 @@ let indoorGamesItems = {
   ],
   "PAID GAMES:</br> AED 20/hr":[
     {
-      id: "ps5",
+      id: "PS5",
       name: "Ps5",
       image: "ps5.webp"
     }
